@@ -28,14 +28,14 @@ function writeTitle() {
     }
 }
 
-function startGame() {
+// function startGame() {
     
-    alert('começou');
-}
+//     alert('começou');
+// }
 
 function escope() {
-    const gameStarter = document.getElementById('game-starter');
-    gameStarter.addEventListener('click', startGame);
+    // const gameStarter = document.getElementById('game-starter');
+    // gameStarter.addEventListener('click', startGame);
     
     parallaxListener();
     writeTitle();
