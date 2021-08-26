@@ -27,4 +27,4 @@ function escope() {
     parallaxListener();
 }
 
-// escope();
+escope();
