@@ -144,6 +144,8 @@ body {
     position: absolute;
     max-width: 100%;
     text-align: justify;
+    color: var(--primary-dark-purple);
+    opacity: 0.6;
   }
 
   .parallax-container {
