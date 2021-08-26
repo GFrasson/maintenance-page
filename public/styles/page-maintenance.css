@@ -21,6 +21,17 @@ body {
 
 .page-title::after {
   content: '_';
+  opacity: 1;
+  animation: step-start 1.07s pisca infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .parallax-layer {
@@ -122,6 +133,12 @@ body {
   font-size: 5rem;
   z-index: -1;
 }
+
+
+/* modal */
+
+
+
 
 @media (max-width: 600px) {
   #root {

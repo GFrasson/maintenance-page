@@ -15,9 +15,22 @@ function parallaxListener() {
     document.addEventListener('mousemove', parallax);
 }
 
+function writeTitle() {
+    const title = document.querySelector('.page-title');
+    const titleArray = title.innerHTML.split('');
+
+    title.innerHTML = "";
+
+    for (let i = 0; i < titleArray.length; i++) {
+        setTimeout(() => {
+            title.innerHTML += titleArray[i];
+        }, 100 * i);
+    }
+}
+
 function startGame() {
+    
     alert('começou');
-//   console.log('game started');
 }
 
 function escope() {
@@ -25,6 +38,7 @@ function escope() {
     gameStarter.addEventListener('click', startGame);
     
     parallaxListener();
+    writeTitle();
 }
 
 escope();
