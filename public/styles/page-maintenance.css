@@ -8,6 +8,18 @@ body {
   bottom: 0;
   width: 46.5rem;
   height: auto;
+  filter: brightness(100%);
+  animation: iluminacao 5s linear infinite;
+}
+
+@keyframes iluminacao {
+  0%, 15%, 18%, 45.1%, 60%, 65.1%, 83%, 90.1%, 92% {
+    filter: brightness(20%);
+  }
+
+  15.1%, 18.1%, 30%, 45%, 60.1%, 65%, 83.1%, 90%, 92.1%, 100% {
+    filter: brightness(100%);
+  }
 }
 
 .page-title {
