@@ -52,8 +52,9 @@ body {
   color: var(--dark-blue);
 }
 
-.parallax-layer.white-layer {
+.parallax-layer.white-layer a {
   color: var(--white);
+  text-decoration: none;
 }
 
 #scripts-layer-1 {
@@ -70,9 +71,9 @@ body {
   left: 1.6%;
 }
 
-#game-starter {
+#instagram {
   top: 19%;
-  left: 42%;
+  left: 35%;
   z-index: 0;
 }
 
@@ -134,12 +135,6 @@ body {
   z-index: -1;
 }
 
-
-/* modal */
-
-
-
-
 @media (max-width: 600px) {
   #root {
     height: 100%;
@@ -153,6 +148,7 @@ body {
     font-size: 5rem;
     margin: 0;
     margin-left: 1.5rem;
+    z-index: 1;
   }
 
   .smartphone-scripts {
@@ -163,6 +159,12 @@ body {
     text-align: justify;
     color: var(--primary-dark-purple);
     opacity: 0.6;
+    z-index: 0;
+  }
+
+  .smartphone-scripts a {
+    color: white;
+    text-decoration: none;
   }
 
   .parallax-container {
